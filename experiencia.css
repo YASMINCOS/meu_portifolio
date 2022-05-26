@@ -1,0 +1,161 @@
+.experiencia{
+    max-width: 1200px;
+    padding: 40px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 100px;
+}
+.experiencia .subtitulo{
+    color: #e0e0e0;
+}
+.experiencia-texto{
+    font-size: 1.5rem;
+    line-height: 1.33;
+    max-width: 50ch;
+    margin-bottom: 60px;
+    color: #525252;
+}
+.experiencia-texto strong{
+    color:#141414;
+}
+.empresa{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:10px 20px;
+    padding: 20px;
+    background: #f5f5f5;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    position: relative;
+}
+.empresa::before{
+    content: "";
+    display: block;
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(#b6f829, #67dd0a);
+    position: absolute;
+    top: 20px;
+    left: -4px;
+}
+.empresa-ano{
+    position: absolute;
+    top: 20px;
+    left: -100px;
+    color: #525252;
+    text-align: right;
+    width: 80px;
+    font-size: 0.875rem;
+}
+.empresa-titulo{
+    font-size: 1.125rem;
+    line-height: 1.1;
+    font-weight: bold;
+}
+.empresa-texto{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    color: #525252;
+}
+
+.empresa-habilidade{ 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10;
+    align-content: start;
+}
+.empresa-habilidade li{
+    font-size: 0.875rem;
+    line-height: 1.4;
+    border-radius: 3px;
+    background: #ffffff;
+    padding: 5px 5px;
+}
+@media(max-width:800px){
+    .experiencia{
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    .experiencia .subtitulo{
+        color: #141414;
+    }
+    .empresa-texto{
+        font-size: 1.25rem;
+    }
+    .empresa-ano{
+        position: initial;
+        order: 1;
+        width: initial;
+        text-align: left;
+    }
+   
+}
+@media(max-width:400px){
+    .empresa{
+        grid-template-columns: 1fr;
+    }
+}
+.formacao-extra h3::before{
+    display: block;
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url(../portifolio/img/cursos.svg) no-repeat center center;
+    position: absolute;
+    left: -36px;
+    top: -4px;
+}
+.cursos h3::before{
+    background-image: url(../portifolio/img/cursos.svg) no-repeat center center;
+}
+.idiomas h3::before{
+    background-image: url(../portifolio/img/idiomas.svg) no-repeat center center;
+}
+.footer {
+    background: #000000;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    padding: 120px 20px 60px 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+  }
+  
+  .footer-texto {
+    font-size: 1.5rem;
+    line-height: 1.33;
+    color: #cccccc;
+  }
+  
+  .footer-contato li {
+    font-weight: bold;
+    font-size: 2.25rem;
+    line-height: 1.1;
+    color: #ffffff;
+    margin-bottom: 30px;
+  }
+  
+  .footer-contato li a {
+    color: #ffffff;
+  }
+  
+  .footer-copy {
+    grid-column: 1 / -1;
+    font-size: 1.125rem;
+    color: #8f8f8f;
+  }
+  
+  @media (max-width: 800px) {
+    .footer-container {
+      grid-template-columns: 1fr;
+      gap: 40px;
+    }
+    .footer-contato li {
+      font-size: 1.5rem;
+    }
+  }
